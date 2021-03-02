@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A website about Model-view-controller">
+        <meta name="keywords" content="model, view, controller">
+        <meta name="author" content="MD Kafil Uddin">
+        <title>Topic</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Model-View-Controller</h1>
+    </header>
+
+    <div id="forMobile">
+        <label for="burgerCheck"><img id="burgerIcon" src="./images/burger-menu.png" alt="Burger Menu Icon"></label>
+        <input type="checkbox" id="burgerCheck">
+
+    <nav>
+        <ul>
+            <li><a href="./index.html" id="home">Home</a></li>
+            <li><a href="./topic.html" id="topic">Topic</a></li>
+            <li><a href="./quiz.html" id="quiz">Quiz</a></li>
+            <li><a href="./enhancements.html" id="enhancements">Enhancements</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+    <aside>
+        <h2>Definitions</h2>
+        <dl>
+            <dt>Static Website</dt>
+            <dd>A website that contains Web pages that are delivered to the user's browser precisely as it is stored on the web server. They display the same information for all users.</dd>
+            <dt>Single Page Application (SPA)</dt>
+            <dd>A web application or website that allows for user interaction, as it is a single page that is constantly rewritten in response to the user's inputs rather than a multitude of static web pages on a server.</dd>
+            <dt>Server-Side</dt>
+            <dd>Also called the backend. A web development component that involves scripting,database management and other functions that occur behind the scenes. </dd>
+            <dt>Client-Side</dt>
+            <dd>Also called the frontend. A web development component that involves markup, presentation, scripting and other functions that occur in the user's browser.</dd>
+        </dl>
+    </aside>
+    <figure>
+        <img src="./images/mvc_dhollingworth.png" alt="The MVC Model">
+        <figcaption><em>A visual representation of the Model-View-Controller.</em></figcaption>
+    </figure>
+    <article>
+        <section class="mainContent">
+            <h2>What is MVC?</h2>
+            <p><em>Model-view-controller</em> (or MVC) is an architectural pattern used chiefly for user interface development. It separates an application into three parts, which are all interconnected. It is a popular way of organising code, as it divides code into sections that have different purposes. Some code may contain the important data, some code may decorate application appearance and some code may control app functionality.</p>
+            
+            <p> It was developed in the 1970s by Trygve Reenskaug, a Norwegian programmer at Smalltalk, the conceivers of an early programming language also called <em>Smalltalk</em> This was done to divide the information within programs into different categories so that it can be easily discerned from the external program being delivered to the user, which uses information from each category to create one representation.
+            The easiest way to understand this concept is to break it down into the three components of <em>Model</em>, <em>View</em> and <em>Controller.</em></p>
+            <ol>
+                <li><h3 class="listBold">Model</h3>
+                <p>A model is something. It may be a single object or it may be a collection of objects that make up a bigger object.</p></li>
+                <li><h3 class="listBold">View</h3>
+                <p>This refers to a visual representation of a model - something that can be presented and perceived by someone like you.</p></li>
+                <li><h3 class="listBold">Controller</h3>
+                <p>The link between the user and the view. It allows the user to interact with the view through menus, buttons and other commands.</p></li>
+            </ol>
+        </section>
+        <section class="mainContent">
+            <h2>Popularity and Future of MVC</h2>
+            <p>Model-View-Controller is used widely across the World Wide Web as a pattern for web applications such as static websites and single page applications (SPAs). Both server-side and client-side web frameworks, like Ruby on Rails (server) and ReactJS (client), enforce MVC as an organised way of creating web apps.</p>
+            <figure>
+                <table id="mvcTable">
+                    <tr>
+                        <th>FRAMEWORK</th>
+                        <th>LANGUAGE</th>
+                        <th>RELEASE DATE</th>
+                        <th>MVC</th>
+                    </tr>
+                    <tr>
+                        <td>AngularJS</td>
+                        <td>JavaScript</td>
+                        <td>2010</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>EmberJS</td>
+                        <td>JavaScript</td>
+                        <td>2011</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Drupal</td>
+                        <td>PHP</td>
+                        <td>2000</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Joomla</td>
+                        <td>PHP</td>
+                        <td>2005</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Laravel</td>
+                        <td>PHP</td>
+                        <td>2011</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Django</td>
+                        <td>Python</td>
+                        <td>2005</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Flask</td>
+                        <td>Python</td>
+                        <td>2010</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby on Rails</td>
+                        <td>Ruby</td>
+                        <td>2004</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Tntnet</td>
+                        <td>C++</td>
+                        <td>2013</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Kepler</td>
+                        <td>Lua</td>
+                        <td>2005</td>
+                        <td class="yes">Yes</td>
+                    </tr>
+                </table>
+                <figcaption><em>This table indicates the web development frameworks of various languages that apply Model-View-Controller.</em></figcaption>
+            </figure>
+            <!--Add a table here-->
+        </section>
+        <section class="mainContent" id="similarTechnologies">
+            <h2>Similar Technologies</h2>
+            <ul>
+                <li>Hierarchical Model-View-Controller</li>
+                <li>Model-View-Adapter</li>
+                <li>Model-View-Presenter</li>
+                <li>Model-View-Viewmodel</li>
+            </ul>
+            <!--Ordered list-->
+        </section>
+    </article>
+    <footer>
+        <a href="mailto:102091802@student.swin.edu.au">102091802@student.swin.edu.au</a>
+        <p>&#169; 2019 MD Kafil Uddin</p>
+    </footer>
+</body>
+</html>

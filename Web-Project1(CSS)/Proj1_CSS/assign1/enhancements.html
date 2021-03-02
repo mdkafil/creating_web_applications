@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A website about Model-view-controller">
+    <meta name="keywords" content="model, view, controller">
+    <meta name="author" content="MD Kafil Uddin">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Model-View-Controller</h1>
+    </header>
+    <div id="forMobile">
+            <label for="burgerCheck"><img id="burgerIcon" src="./images/burger-menu.png" alt="Burger Menu Icon"></label>
+            <input type="checkbox" id="burgerCheck">
+    
+        <nav>
+            <ul>
+                <li><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./topic.html" id="topic">Topic</a></li>
+                <li><a href="./quiz.html" id="quiz">Quiz</a></li>
+                <li><a href="./enhancements.html" id="enhancements">Enhancements</a></li>
+            </ul>
+        </nav>
+    
+        </div>
+    <article>
+        <section id="enhancements">
+            <h2>Enhancements</h2>
+            <ol>
+                <li><h3><a href="./index.html">Responsive Burger Menu</a></h3>
+                    <ul>
+                        <li>I created a menu that responds to the user's screen size. When the screen is wider than 802px, the menu is a horizontal and takes up 100% of the screen's width. When the screen is less than 802px wide, the menu becomes vertical, and is activated by pressing a burger button (three stacked rectangles).</li>
+                        <li>This was done purely with CSS using the <em>checkbox trick</em>. To do this, you place a <code>label</code> in your HTML code and give it a <code>for</code> attribute that references the id of a checkbox. When the screen is less than 802px wide, the menu becomes hidden through <code>display: hidden</code>. You use the pseudo-class <code>:checked</code> on the checkbox to display the menu as block (the menu and its container must be a child or sibling of the checkbox), when the burger button is pressed.</li>
+                        <li>Reference: <a href="https://www.youtube.com/watch?v=xMTs8tAapnQ">https://www.youtube.com/watch?v=xMTs8tAapnQ</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="./quiz.html">Input:invalid Pseudo Class</a></h3>
+                    <ul>
+                        <li>I used <code>input:invalid</code> in my CSS, specifically for the quiz page. This tells the user whether the response they have entered on the quiz form is valid or not by changing colors accordingly. If the response the user has entered is valid, the input will turn green. If the response is invalid, it will turn red.</li>
+                        <li>In CSS, I initially gave all inputs a light green background and a green border-bottom (except the submit inputs). This stipulates that they are valid. Then, I added an <code>input:invalid</code> pseudo-class, which gives the inputs a pink background and red border-bottom to alert the user that the input has either not been filled or has been filled incorrectly.</li>
+                        <li>Reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid">https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid</a> </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>References</h2>
+            <ul>
+                <li>Model View Controller, Wikipedia - https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller</li>
+                <li>Understanding Model View Controller, Coding Horror - https://blog.codinghorror.com/understanding-model-view-controller/</li>
+                <li>MVC: Model, View, Controller, Codecademy - https://www.codecademy.com/articles/mvc</li>
+                <li>Model-View-Controller, Apple Developer - https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html</li>
+                <li>What is MVC? Simple Explanation, Traversy Media YouTube - https://www.youtube.com/watch?v=pCvZtjoRq1I</li>
+            </ul>
+        </section>
+        
+
+    </article>
+
+    <footer>
+        <a href="mailto:102091802@student.swin.edu.au">102091802@student.swin.edu.au</a>
+        <p>&#169; 2019 MD Kafil Uddin</p>
+    </footer>
+
+</body>
+</html>

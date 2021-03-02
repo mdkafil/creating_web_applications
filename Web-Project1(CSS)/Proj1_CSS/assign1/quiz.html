@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A website about Model-view-controller">
+    <meta name="keywords" content="model, view, controller">
+    <meta name="author" content="MD Kafil Uddin">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Model-View-Controller</h1>
+    </header>
+
+    <div id="forMobile">
+        <label for="burgerCheck"><img id="burgerIcon" src="./images/burger-menu.png" alt="Burger Menu Icon"></label>
+        <input type="checkbox" id="burgerCheck">
+
+    <nav>
+        <ul>
+            <li><a href="./index.html" id="home">Home</a></li>
+            <li><a href="./topic.html" id="topic">Topic</a></li>
+            <li><a href="./quiz.html" id="quiz">Quiz</a></li>
+            <li><a href="./enhancements.html" id="enhancements">Enhancements</a></li>
+        </ul>
+    </nav>
+
+    <form method="POST" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Student Details</legend>
+                <ul id="studentDetails">
+                    <li>
+                        <label for="firstNameInput">First Name:</label>
+                        <input type="text" id="firstNameInput" name="firstName" required="required" maxlength="30" pattern="^[a-zA-Z-\s]+$">   
+                    </li>
+                    <li>
+                        <label for="familyNameInput">Last Name:</label>
+                        <input type="text" id="familyNameInput" name="familyName" required="required" maxlength="30" pattern="^[a-zA-Z-\s]+$">
+                    </li>
+                    <li>
+                        <label for="emailInput">Email:</label>
+                        <input type="email" id="emailInput" name="email" placeholder="adam@example.com" required="required">
+                    </li>
+                    <li>
+                        <label for="idInput">Student ID:</label>
+                        <input type="text" id="idInput" name="ID" placeholder="102123345" required="required" pattern="[0-9]{9,10}">
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Quiz Questions</legend>
+            <ol id="quizQuestions">
+                <li>
+                    <label for="q1Input">What is the name of the Smalltalk programmer who developed MVC?</label>
+                    <br>
+                    <input type="text" id="q1Input" name="q1Input" required="required">
+                </li>
+                <li>
+                    <label for="clientSide">The backend, the component of web development that involves behind the scenes scripting, is also know as what?</label>
+                    <br>
+                    <ul>
+                        <li>
+                            <input type="radio" value="clientSide" id="clientSide" name="q2Input" required="required">
+                            <label for="clientSide">Client-Side</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" value="bottomEnd" id="bottomEnd" name="q2Input">
+                            <label for="bottomEnd">Bottom-End</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" value="serverSide" id="serverSide" name="q2Input">
+                            <label for="serverSide">Server-Side</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" value="bonnet" id="bonnet" name="q2Input">
+                            <label for="bonnet">Bonnet</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="laravel">Which of these web development frameworks utilise MVC? (Tick all that apply)</label>
+                    <br>
+                <ul>
+                    <li>
+                        <input type="checkbox" value="laravel" id="laravel" name="q3Input[]">
+                        <label for="laravel">Laravel</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" value="angularJS" id="angularJS" name="q3Input[]">
+                        <label for="angularJS">AngularJS</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" value="flask" id="flask" name="q3Input[]">
+                        <label for="flask">Flask</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" value="joomla" id="joomla" name="q3Input[]">
+                        <label for="joomla">Joomla</label>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <label for="q4Input">The link between the user and the view is known as the...</label>
+                    <br>
+                    <select name="q4Input" id="q4Input">
+                        <option value="model">Model</option>
+                        <option value="view">View</option>
+                        <option value="controller">Controller</option>
+                    </select>
+                </li>
+                <li>
+                    <label>What year was Ruby on Rails, a Ruby web framework that uses MVC, released?</label>
+                    <br>
+                    <input type="number" id="q5Input" name="q5Input" required="required">
+                </li>
+            </ol>
+            <input type="submit" value="Submit Answers">
+            <input type="reset" value="Reset Answers">
+
+        </fieldset>
+
+
+
+    </form>
+    
+    </div>
+
+</body>
+</html>
