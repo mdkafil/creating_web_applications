@@ -1,0 +1,239 @@
+/*
+filename:[Md Kafil Uddin]
+author:[Md Kafil Uddin]
+created:[19 Aug 2019]
+last modified:[3 Sep 2019]
+description:[htiml files it refers to (if known)]
+*/
+
+*{font-family: "Times New Roman", sans-serif;}
+
+body {background-image: linear-gradient(to bottom right, white 20%, blanchedalmond 60%);}
+
+article p {text-indent: 2em;}
+
+/*navigation bar*/
+nav {position: sticky; top: 0;}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid black;
+	background-color: black;
+}
+nav ul li {
+	float: left;
+	border-right: 1px solid gray;
+}
+nav ul li:last-child {border-right: none;}
+nav ul li a{
+	display: block;
+	font-size: 130%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 12px 14px;
+}
+nav ul li:hover {background-color: #ddd;}
+.here {background-color: #4CAF50;}
+
+h1 {color: darkred; font:normal bolder 3em serif;;}
+h2 {color: darkblue; font:normal bold 2em serif; }
+h3 {color: darkcyan; font:normal bold 1.5em serif;}
+
+figure {
+	text-align: center;
+	font-style: italic;
+}
+
+i {display: inline;}
+
+footer {clear: both;}
+
+/*footer2*/
+#f2 p {display: inline-block; width: 33%; font-style: italic;}
+#f2 p:first-child {float: left; font-style: italic;}
+#f2 p:nth-child(2) {text-align: center;}
+#f2 p:last-child {float: right; text-align: right; font-style: italic;}
+
+ol li {
+	font-size: 110%;
+	line-height: 120%;
+	padding: 0.5em;
+}
+
+/*index.html*/
+#body { 
+	background: lightgray url(images/background.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+#index_s1 p {text-indent: 0;}
+
+#index p {
+	line-height: 130%;
+	font-size: 110%;
+}
+
+#index_s1 p {text-indent: 0;}
+
+#index article {
+	float: left;
+	width: 40%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+}
+
+#index_aside {
+	float: right;
+	width: 40%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+	padding: 1em 1em;
+}
+
+#index_img {box-sizing: border-box; width: 100%;}
+
+#map {
+	text-indent: 0;
+	text-align: left;
+	font-style: italic;
+}
+
+#map iframe {width: 90%;}
+
+/*topic.html*/
+table, th, td {border: 1px solid black;}
+
+#topic_article {
+	font-size: 110%;
+	line-height: 130%;
+}
+
+#topic_name {font: 3em oblique bold serif;}
+
+#video{
+	text-align: center;
+	border-bottom-style: solid;
+}
+
+.topic_h2 {text-align: left;}
+
+#topic_section {
+	clear: both;
+	float: left;
+	width: 60%;
+	margin: 1em 1em;
+	padding: 0.5em 0.5em;
+	border-right-style: solid;
+}
+
+#IP_address, #svg {
+	width: 30%;
+	float: right;
+	margin: 1em;
+	padding: 0.5em 0 0.5em 0.5em;
+	box-shadow: 12px 12px 6px darkgray;
+	border: 2px solid gray;
+}
+
+text {font-size: 110%;}
+
+caption {font-weight: 600; font-size: 150%;}
+th {background-color: dodgerblue;}
+td {background-color: cornflowerblue;}
+
+dl {
+	border: 3px groove black;
+	padding: 0.5em;
+  }
+dt {
+	clear: left;
+	float: left;
+	width: 185px;
+	text-align: right;
+	font-weight: bold;
+}
+dt::after {content: ":";}
+dd {
+	margin: 0 0 0 190px;
+	padding: 0 0 0.5em 0;
+}
+
+#video iframe {width: 55%;}
+
+#topic_s1 figure img {width: 40%; height: 40%;}
+
+#link_quiz {
+	float: right;
+	margin: 0.5em 2em 1em 0.5em;
+	padding: 0.5em;
+	text-align: center;
+	width: 75px;
+	height: 25px;
+	transition: background-color 2s, border-radius 2s, font-size 2s, width 2s, height 2s, transform 2s;
+}
+#link_quiz:hover {
+	background-color: lightskyblue;
+	border-radius: 8px;
+	font-size: 125%;
+	width: 100px;
+	height: 50px;
+	transform: scale(1.25, 1.25);
+}。   /* enhancement: transition and transform */
+
+/*quiz.html*/
+fieldset {
+	border-radius: 10px;
+	margin: 1em 0.5em;
+}
+
+legend {font-size: 200%; font-weight: bold;}
+
+fieldset p {font-size: 120%; line-height: 120%;}
+
+input[type=submit], input[type=reset] {
+	border-radius: 8px;
+	background-color: snow;
+	padding: 10px 20px;
+	font-size: 110%;
+}
+
+textarea {
+	width: 50%;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+	background-color: #f1f1f1f1;
+}
+
+input[type=text] {
+	box-sizing: border-box;
+	font-size: 110%;
+	border-radius: 6px;
+	margin: 1em 0.5em;
+}
+
+input[type=text]:focus {border: 2px solid slateblue;}
+
+#born {font-size: 100%;}
+
+input[type=radio], input[type=checkbox] {
+	margin: 1em 1em;
+	padding: 0.5em 1em;
+}
+
+/*#timer {
+	font-size: 150%;
+	text-align: center;
+	width: 230px;
+	height: 30px;
+	border: 2px solid gray;
+	background-color: white;
+	position: sticky; top: 0;
+	float: right;
+	margin: 1em 2em 0 0;
+}*/
+
+/*enhancements.html*/
+ol ul {list-style-type: square;}

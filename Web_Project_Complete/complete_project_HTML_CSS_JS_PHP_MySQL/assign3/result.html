@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quiz Result</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Assignment 1" />
+	<meta name="keywords" content="html,css,dns" />
+	<meta name="author" content="MD Kafil Uddin" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<script src="script/result.js"></script>
+</head>
+<body>
+
+<header>
+	<h1>Quiz Result</h1>
+</header>
+
+<form id="result">
+	<fieldset>
+		<legend>Your result</legend>
+		<p>Your name: <span id="result_name"></span></p>
+		<p>Your student ID: <span id="result_id"></span></p>
+		<p>Your last score: <span id="result_score"></span></p>
+		<p>Your number of attempts: <span id="result_attempts"></span></p>
+
+		<input type="hidden" name="firstname" id="firstname" />
+		<input type="hidden" name="middlename" id="middlename" />
+		<input type="hidden" name="lastname" id="lastname" />
+		<input type="hidden" name="id" id="id" />
+		<input type="hidden" name="score" id="score" />
+		<input type="hidden" name="attempts" id="attempts" />
+
+		<button type="button" id="redoButton">Redo</button>
+	</fieldset>
+</form>
+
+<footer id="f2">
+	<p>COS10011 Assignment 1</p>
+	<p>&#169;<a href="http://www.swinburne.edu.au">Swinburne University of Technology</a></p>
+	<p>Mark up by:<a href="mailto:102409230@student.swin.edu.au">MD Kafil Uddin</a></p>
+</footer>
+
+</body>
+</html>
