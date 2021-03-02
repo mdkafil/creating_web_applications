@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="description" content="Making quiz form." />
+      <meta name="keywords" content="HTML, Form, tags" />
+      <meta name="author" content="Md Kafil Uddin" />
+      <title>Making quiz form </title>
+
+      <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+      <script src="scripts/quiz.js" ></script>
+      <script src="scripts/enhancements.js"></script>
+    </head>
+
+      <body>
+        <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="topic.html">Topic</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="enhancements.html">Enhancements</a>
+            <a href="enhancements2.html">Enhancements2</a>
+          </nav>
+        </header>
+        <div class="page">  
+          <h1>Quiz page</h1>
+        </div>
+   
+          <br/>    
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+  
+            <section id="start">
+              
+                <h3>Read the instructions carefully before you start your quiz.</h3>
+                <h3>You have 45 seconds to complete your test.</h3>
+                <h3>Best of Luck!!</h3> 
+              
+                <button type="button" id="button">Start Quiz</button>
+                <h3 id="clock">Time</h3>
+              
+            </section>
+
+            <h2 id="details"> The details of the student are as follows:</h2>
+      
+            <form id="quizform"  method="post" action="result.html" >
+                <fieldset id="person">
+                  <legend>Student Details</legend>
+                    <p>
+                      <label for="first_name"> First Name: </label>
+                      <input type="text" name="first_name" id="first_name"  required="required"  pattern="^[A-Za-z-]{1,30}$" /> 
+                    </p>
+                    <p>
+                      <label for="last_name"> Family Name:</label>
+                      <input type="text" name="last_name" id="last_name"  required="required" pattern="^[A-Za-z-]{1,30}$" />
+                    </p>
+                    <p>
+                      <label for="stdnt_ID"> Student ID:</label>
+                      <input type="text" name="stdnt_ID" id="stdnt_ID" required="required" pattern="\d{7}|\d{10}" />
+                    </p>
+                </fieldset>
+                <div>   
+                  <h2>Here are some questions related to the topic:</h2>
+                </div>
+
+                <fieldset id="question">
+                  <legend>Question and Answers</legend>
+                    <p>
+                      1.In VoIP , what does the letter "I" stand for ?
+                    </p>
+                    <p>
+                      <label for="one">Intranet</label>
+                      <input type="radio" id="one" name="Answer1" required="required" checked="checked" value="one" />
+                    </p>
+                    <p>
+                      <label for="two">Internet</label>
+                      <input type="radio" id="two" name="Answer1" required="required" value="two" />
+                    </p>
+                    <p>
+                      <label for="three">International</label>
+                      <input type="radio" id="three" name="Answer1" required="required" value="three" />
+                    </p>
+                    <p>
+                      <label for="four">Inline</label>
+                      <input type="radio" id="four" name="Answer1" required="required" value="four" />
+                    </p>
+                    <hr/>
+                    <p>
+                      2.What are the examples of VoIP ?
+                    </p>
+                    <p>
+                      <label for="Skype">Skype</label>
+                      <input type="checkbox" id="Skype" name="Answer2" checked="checked"  value="Skype"/>
+                    </p>        
+                    <p>
+                      <label for="Google">Google</label>
+                      <input type="checkbox" id="Google" name="Answer2"  value="Google"/>
+                    </p>
+                    <p>
+                      <label for="Teamspeak">Teamspeak</label>
+                      <input type="checkbox" id="Teamspeak" name="Answer2"  value="Teamspeak"/>
+                    </p>
+                    <p>
+                      <label for="Vibes">Vibes</label>
+                      <input type="checkbox" id="Vibes" name="Answer2"  value="Vibes"/>
+                    </p>
+                    <hr/>
+                    <p>
+                      3.To perform tracking of IP , Session Initiation Protocol uses the concept of ?
+                    </p>
+                    <p>
+                      <label for="droplist">Answer: </label>
+	        		        <select name="droplist" id="droplist">
+	        		 	        <option value="none">Please Select</option>
+	       		            <option value="Registration">Registration</option>
+	        		          <option value="Reformation">Reformation</option>
+	        		          <option value="Streaming">Streaming</option>
+	        		          <option value="Transtion">Transtion</option>
+                      </select>
+                      <br/>
+                    </p>
+                    <hr/>
+                    <p>
+                      4.How does VoIP work ?
+                    </p>
+                    <p>
+                      <textarea id="description" name="description" rows="8" cols="35" placeholder="Write your answer in brief.."></textarea>
+                    </p>
+                    <hr/>
+                    <p>
+                      5.When does the forward connection error occur ?
+                    </p>
+                    <p>
+                      <label for="answer">Answer: </label>
+                      <input type="text" name="answer" id="answer" required="required"/>
+                    </p>
+
+                  </fieldset>
+                    <p id="buttony">
+                      <input type="submit" id="submit" value="Submit"/>
+                      <input type="reset" value="Reset"/>
+                    </p>
+                    <br/>
+            </form>
+                <footer>
+                  <section>
+                    <hr/>
+                    <h3>
+                      &#169;<a href="http://www.swinburne.edu.au">Swinburne University of Technology</a>
+                      &#160;&#160;&#160; Markup By:&#160;<a href="mailto:102617787@student.swin.edu.au" id="stmail">Md Kafil Uddin</a>
+                    </h3>
+                  </section>
+                </footer>
+    </body>
+</html>
